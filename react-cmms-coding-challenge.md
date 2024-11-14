@@ -3,6 +3,11 @@
 ## Overview
 Create a simple maintenance tracking system that allows technicians to log maintenance activities on equipment and visualize basic maintenance metrics.
 
+## Time Frame and Submission
+- Total time allowed: 1 week
+- Submit as a public GitHub repository
+- Use clear, descriptive commit messages throughout development
+
 ## Phase 1 (Required)
 
 ### Technical Requirements
@@ -11,11 +16,11 @@ Create a simple maintenance tracking system that allows technicians to log maint
 - Tanstack Table
 - Recharts for visualization
 - Zod for form validation
+- Playwright for E2E testing
 
 ### Core Features
 
 #### 1. Equipment Management
-Equipment should be tracked with the following details:
 ```typescript
 interface Equipment {
   id: string;
@@ -30,7 +35,6 @@ interface Equipment {
 ```
 
 #### 2. Maintenance Records
-Each maintenance record should include:
 ```typescript
 interface MaintenanceRecord {
   id: string;
@@ -88,6 +92,23 @@ Create a simple dashboard with:
 - Maintenance hours by department (bar chart)
 - Recent maintenance activities
 
+#### 4. Required Tests
+Implement the following E2E tests using Playwright:
+
+```typescript
+// Equipment Management Tests
+- Should create new equipment with valid data
+- Should show validation errors for invalid equipment data
+- Should edit existing equipment
+- Should filter equipment table
+
+// Maintenance Record Tests
+- Should create new maintenance record
+- Should validate maintenance hours (reject negative/over 24)
+- Should show equipment name in maintenance table
+- Should filter maintenance records by date range
+```
+
 ## Phase 2 (Extra Credit)
 
 ### Database Integration
@@ -103,16 +124,73 @@ Add ability to:
 - Show total maintenance hours
 - Format tables nicely for printing
 
+## Submission Requirements
+
+### Documentation
+README.md must include:
+1. Setup Instructions
+   - Prerequisites
+   - Installation steps
+   - How to run the application
+   - How to run tests
+
+2. Features Implementation
+   - List of completed features
+   - Screenshots of key features (optional)
+   - API endpoints (if Phase 2 completed)
+
+3. Testing Approach
+   - Testing strategy
+   - What is tested and why
+   - How to run different types of tests
+
+4. Technical Decisions
+   - Key libraries used and why
+   - Architecture decisions
+   - State management approach
+
+5. Known Issues/Limitations
+   - Current bugs or limitations
+   - Future improvements
+
+6. Bonus Features (if implemented)
+   - Description of extra features
+   - How to use them
+
+## Tips for Success
+- ✅ Complete required features before attempting bonus features
+- ✅ Write clear, maintainable tests
+- ✅ Use TypeScript effectively
+- ✅ Handle error cases
+- ✅ Keep code organization clean
+- ✅ Use meaningful component names
+- ✅ Include loading states
+- ✅ Make commit messages descriptive
+- ✅ Don't overengineer - simple solutions are preferred
+
 ## Evaluation Criteria
 
-### Phase 1
-- Form validation implementation
-- Table functionality
-- Chart creation
-- Type safety
+### Code Quality (40%)
+- TypeScript usage
 - Code organization
 - Error handling
+- Component composition
+- Form validation
 
-### Phase 2
-- Database schema design
-- Print layout quality
+### Functionality (30%)
+- Feature completeness
+- Data management
+- Search/filter implementation
+- Chart functionality
+
+### Testing (20%)
+- Test coverage
+- Test organization
+- Test reliability
+- Error cases covered
+
+### Documentation (10%)
+- README clarity
+- Code comments
+- Commit messages
+- Setup instructions
