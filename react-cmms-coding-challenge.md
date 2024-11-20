@@ -4,7 +4,6 @@
 Create a simple maintenance tracking system that allows technicians to log maintenance activities on equipment and visualize basic maintenance metrics.
 
 ## Time Frame and Submission
-- Total time allowed: 1 week
 - Submit as a public GitHub repository
 - Use clear, descriptive commit messages throughout development
 
