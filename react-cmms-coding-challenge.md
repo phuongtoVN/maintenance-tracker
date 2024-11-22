@@ -193,3 +193,5 @@ README.md must include:
 - Code comments
 - Commit messages
 - Setup instructions
+
+If you can't complete the required portion within a reasonable amount of time (a couple weeks), feel free to submit what you got done. Something is better than nothing and I'm mainly looking for people who are willing to research and put in the effort to solve a problem they've never seen before.
