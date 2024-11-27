@@ -1,4 +1,4 @@
-# Basic Maintenance Tracking System Challenge
+# React Coding Challenge
 
 ## Overview
 Create a simple maintenance tracking system that allows technicians to log maintenance activities on equipment and visualize basic maintenance metrics.
@@ -193,5 +193,7 @@ README.md must include:
 - Code comments
 - Commit messages
 - Setup instructions
+
+I'd suggest not relying on ChatGPT and other LLMs too much as you'll need to prove your knowledge of the technologies you choose in the technical part of the interview. This tends not to go well for people who relied on ChatGPT too heavily.
 
 If you can't complete the required portion within a reasonable amount of time (a couple weeks), feel free to submit what you got done. Something is better than nothing and I'm mainly looking for people who are willing to research and put in the effort to solve a problem they've never seen before.
